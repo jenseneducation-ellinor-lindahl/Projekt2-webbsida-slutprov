@@ -6,15 +6,6 @@ gå till styleindex.css
 
 */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-
-  background: #82a7a6;
-
-  font-family: "Vollkorn SC", serif;
-}
-
 .gridcontainer {
   max-height: 850px;
 
@@ -49,12 +40,13 @@ nav {
 
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-ul {
+li {
   list-style: none;
+  padding: 3%;
 }
 
 a {
@@ -104,6 +96,7 @@ footer {
   }
   nav {
     grid-area: 1 / 2 / 2 / 4;
+    justify-content: flex-end;
   }
   section {
     grid-area: 2 / 1 / 4 / 4;

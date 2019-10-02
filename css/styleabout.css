@@ -1,8 +1,10 @@
 @import "styleindex.css";
 
-/* DEN HÄR FILEN INNEHÅLLLER STYLING SOM BARA RÖR CONTACT-SIDAN. 
+/* DEN HÄR FILEN INNEHÅLLLER STYLING SOM BARA RÖR ABOUT-SIDAN. 
 För allmän styling som typsnitt och färger som rör hela websidan, 
-gå till styleindex.css */
+gå till styleindex.css 
+
+*/
 
 * {
   box-sizing: border-box;
@@ -66,30 +68,21 @@ a:hover {
   color: #494c4e;
 }
 
+img {
+  max-width: 150px;
+  border-radius: 20%;
+}
+
 section {
   grid-area: 2 / span 3;
 
-  display: flex;
-  justify-content: space-between;
-}
-
-.formbox {
-  border-style: solid;
-  width: 50%;
-
-  background: #82a7a4;
+  width: 100%;
+  padding: 10% 10% 17% 10%;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
 
-.socialbox {
-  border-style: dotted;
-  width: 50%;
-  background: #82a7a4;
-  display: flex;
-  flex-direction: column;
+  color: #494c4e;
 }
 
 footer {
@@ -119,7 +112,6 @@ footer {
     grid-area: 1 / 2 / 2 / 4;
     justify-content: flex-end;
   }
-
   section {
     grid-area: 2 / 1 / 4 / 4;
   }
