@@ -1,0 +1,11 @@
+/* MAIN STYLING-FIL. Här finns färger och allmän styling för hela webbsidan. 
+Styling som rör individuella sidor finns i respektive css-filer. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  background: #82a7a6;
+
+  font-family: "Vollkorn SC", serif;
+}
