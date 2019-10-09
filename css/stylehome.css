@@ -19,15 +19,6 @@ gå till styleindex.css
 
 .logga {
   grid-area: 1 / span 3;
-
-  width: 100%;
-  padding: 10%;
-
-  color: #eee;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 nav {
@@ -36,27 +27,10 @@ nav {
   width: 100%;
   padding: 5%;
 
-  color: #eee;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-li {
-  list-style: none;
-  padding: 3%;
-}
-
-a {
-  color: #eee;
-
-  text-decoration: none;
-}
-
-a:hover {
-  color: #494c4e;
 }
 
 section {
@@ -67,8 +41,6 @@ section {
 
   display: flex;
   flex-direction: column;
-
-  color: #494c4e;
 }
 
 footer {
@@ -82,10 +54,7 @@ footer {
 
   display: flex;
   align-items: center;
-
-  text-align: right;
-  color: #494c4e;
-  font-size: 70%;
+  justify-content: center;
 }
 
 /*  NEDAN: RESPONSIV GRID - HUR SIDAN SER UT PÅ STÖRRE SKÄRM ÄN MOBIL  */
@@ -93,6 +62,7 @@ footer {
 @media only screen and (min-width: 600px) {
   .logga {
     grid-area: 1 / 1 / 2 / 2;
+    justify-content: flex-start;
   }
   nav {
     grid-area: 1 / 2 / 2 / 4;
@@ -103,5 +73,8 @@ footer {
   }
   footer {
     grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }

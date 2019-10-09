@@ -5,8 +5,49 @@ Styling som rör individuella sidor finns i respektive css-filer. */
   box-sizing: border-box;
   margin: 0;
 
-  background: #82a7a6;
+  background: #000000;
 
-  font-family: "Vollkorn SC", serif;
-  color: #494c4e;
+  font-family: "Questrial", sans-serif;
+  color: #e3b79a;
+}
+
+.logga {
+  width: 100%;
+  padding: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 280%;
+  font-family: "Caveat", cursive;
+  margin-bottom: 2%;
+}
+
+p {
+  font-size: 20px;
+}
+
+fieldset {
+  border-radius: 5%;
+}
+
+footer {
+  font-size: 70%;
+  text-align: right;
 }

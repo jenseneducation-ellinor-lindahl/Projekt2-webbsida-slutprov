@@ -4,15 +4,6 @@
 För allmän styling som typsnitt och färger som rör hela websidan, 
 gå till styleindex.css */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-
-  background: #82a7a6;
-
-  font-family: "Vollkorn SC", serif;
-}
-
 .gridcontainer {
   max-height: 850px;
 
@@ -26,15 +17,6 @@ gå till styleindex.css */
 
 .logga {
   grid-area: 1 / span 3;
-
-  width: 100%;
-  padding: 10%;
-
-  color: #eee;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 nav {
@@ -43,53 +25,56 @@ nav {
   width: 100%;
   padding: 5%;
 
-  color: #eee;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-li {
-  list-style: none;
-  padding: 3%;
-}
-
-a {
-  color: #eee;
-
-  text-decoration: none;
-}
-
-a:hover {
-  color: #494c4e;
-}
-
 section {
   grid-area: 2 / span 3;
 
-  display: flex;
-  justify-content: space-between;
-}
-
-.formbox {
-  border-style: solid;
-  width: 50%;
-
-  background: #82a7a4;
+  width: 100%;
+  padding: 5% 5% 17% 5%;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.contactbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.socialbox {
-  border-style: dotted;
+.contactform {
   width: 50%;
-  background: #82a7a4;
-  display: flex;
-  flex-direction: column;
+}
+
+.socialbox {
+  width: 50%;
+}
+
+input[type="text"] {
+  width: 50%;
+  color: #e3b79a;
+  font-size: 14px;
+
+  border-style: none;
+}
+
+input[type="text"]:focus {
+  border-style: 1px #e3b79a;
+}
+
+section button {
+  border-style: none;
+  font-size: 16px;
+  padding: 5%;
 }
 
 footer {
@@ -103,10 +88,7 @@ footer {
 
   display: flex;
   align-items: center;
-
-  text-align: right;
-  color: #494c4e;
-  font-size: 70%;
+  justify-content: center;
 }
 
 /*  NEDAN: RESPONSIV GRID - HUR SIDAN SER UT PÅ STÖRRE SKÄRM ÄN MOBIL  */
@@ -114,16 +96,24 @@ footer {
 @media only screen and (min-width: 600px) {
   .logga {
     grid-area: 1 / 1 / 2 / 2;
+    justify-content: flex-start;
   }
   nav {
     grid-area: 1 / 2 / 2 / 4;
     justify-content: flex-end;
   }
-
   section {
     grid-area: 2 / 1 / 4 / 4;
   }
+
+  section button {
+    padding: 2%;
+  }
+
   footer {
     grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }

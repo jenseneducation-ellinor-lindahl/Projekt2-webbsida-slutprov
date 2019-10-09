@@ -6,15 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CALL ME, MAYBE.</title>
     <link rel="stylesheet" href="css/stylecontact.css"/>
-    <link
-      href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap"
-      rel="stylesheet"
-    />
+   
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Mr+De+Haviland|News+Cycle|Nothing+You+Could+Do|Questrial|Quicksand|Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
   <body>
    
@@ -24,44 +21,49 @@
         <i class="material-icons" style="font-size:36px">emoji_people</i>
       </div>
       <nav>
-            <li><a href="../Projekt2-webbsida-slutprov/home.html">Home</a></li>
-          <li><a href="#">About me</a></li>
+          <li><a href="../Projekt2-webbsida-slutprov/home.html">Home</a></li>
+          <li><a href="../Projekt2-webbsida-slutprov/about.html">About</a></li>
           <li><a href="#">Projects</a></li>
       </nav>
     
-      
+     
     <section>
-            <div class="socialbox" >
-                <h1>Let's get social!</h1>
-          <a href="#">LinkedIn-logo</a>
-          <a href="#">Fb-logo</a>
-          <a href="#">Insta-logo</a>
-            </div>
-
-            <div class="formbox">
-          
-                <form action="/action_page.php">
+      
+        <h1>Let's talk!</h1>
+            
+        <div class="contactbox">
+                <form class="contactform" name="contactform" method="post" action="#">
+                    <fieldset>
+                        <legend>Email</legend>
                  
-                  <label for="name"><i class="material-icons" style="font-size:16px">
+                            <label for="name"><i class="material-icons" style="font-size:16px">
                     sentiment_very_satisfied
                     </i></label>
-                  <input type="text" id="name" name="name" placeholder="Name..">
-                  <label for="company"><i class="material-icons" style="font-size:16px">
+                                <input type="text" id="name" name="name" placeholder="Your name.."><br/>
+                            <label for="company"><i class="material-icons" style="font-size:16px">
                     business
                     </i></label>
-                  <input type="text" id="company" name="company" placeholder="Company..">
+                                <input type="text" id="company" name="company" placeholder="Company.."><br/>
                   <label for="email"><i class="material-icons" style="font-size:16px">
                     mail_outline
                     </i></label>
-                  <input type="text" id="email" name="email" placeholder="Email..">
+                  <input type="text" id="email" name="email" placeholder="Email address.."><br/>
                   <label for="message"><i class="material-icons" style="font-size:16px">
                     chat_bubble_outline
                     </i></label>
-                  <input type="text" id="message" name="message" placeholder="What's on your mind?">
+                  <input type="text" id="message" name="message" placeholder="What's on your mind?"><br/><br/>
+                  <button>Send</button>
+                </fieldset>
                 </form>
-              
-
-
+           
+         
+                    <fieldset class="socialbox">
+                        <legend>Socials</legend><br/>
+                              <p><a href="#">LINKEDIN</a></p><br/>
+                              <p><a href="#">FACEBOOK</a></p><br/>
+                              <p><a href="#">INSTAGRAM</a></p><br/>
+                    </fieldset>
+         
             </div>
 
           </section>
@@ -69,15 +71,11 @@
         
     
           <footer>
-            <p>
-              <i class="material-icons">copyright</i> copyright. Ellinor Lindahl.
-              2019.
-            </p>
+            <i class="material-icons" style="font-size:12px">copyright</i>
+            Ellinor Lindahl 2019
           </footer>
         </div>
       </body>
-
-
 
 
   </body>
